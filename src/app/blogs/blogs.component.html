@@ -1,0 +1,12 @@
+<ul class="listView">
+  <li *ngFor="let blog of blogs">
+    <button (click)="blogHandler(blog)">
+      {{blog}}
+    </button>
+  </li>
+
+  <div class="selectedBlog" *ngIf="selectedBlog">
+    <h4>Your selected blog is:</h4>
+    {{selectedBlog}}
+  </div>
+</ul>
